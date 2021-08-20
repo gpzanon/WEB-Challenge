@@ -33,7 +33,7 @@
 ### *Instruções gerais sobre o desafio*
 
 #### *Sobre o repositório*
-- ***Fork** esse repositório e faça o desafio numa branch com o seu nome (exemplo: `nome-sobrenome`)*</br>
+- ***Fork** esse repositório e faça o desafio numa **branch** com o seu nome (exemplo: `nome-sobrenome`)*</br>
 - *Assim que concluir o seu desafio, abra um **pull request** com suas alterações*</br>
 
 #### *Tempo gasto*
@@ -46,7 +46,11 @@
 - *Preferencialmente utilizar **Laravel 5.6+** com toda sua stack*</br>
 - *Preferencialmente utilizar **CodeIgniter***</br>
 - *É aceitável utilizar algumas respostas estáticas em determinadas porções da aplicação*</br>
-
+- *Deverão ser disponibilizados no `Git`:*</br>
+  *(a) Estrutura SQL utilizada para a criação do banco de dados*</br>
+  *(b) O código-fonte do programa utilizado na implementação da solução*</br>
+  *(c) Orientação com o passo-a-passo para execução do código a partir de um arquivo README.md*
+  
 #### *O que será avaliado*</br>
 - *Será avaliado os critérios: manutenabilidade, clareza e limpeza de código; resultado funcional; entre outros fatores*</br>
 - *O histórico no `git` também está avaliado*</br>
