@@ -23,7 +23,7 @@
 *Utilize todos os métodos (GET, POST, PUT, DELETE)*</br>
 *A aplicação deverá deverá ser desenvolvida em [VUE.js](https://vuejs.org/), conforme o desenho situado na pasta [layout](https://github.com/gpzanon/WEB-Challenge/tree/main/Layout)*</br>
 *A aplicação deverá consumir a **API** criada anteriormente*</br>
-*Você poderá fazer uso de algum framework para auxiliar no desenvolvimento da interface como [Vuetify](https://vuetifyjs.com/en/), [Bootstrap](https://getbootstrap.com/), [Materialize](https://getbootstrap.com/)*</br>
+*Se preferir, faça uso de algum framework no desenvolvimento da interface como [Vuetify](https://vuetifyjs.com/en/), [Bootstrap](https://getbootstrap.com/), [Materialize](https://getbootstrap.com/)*</br>
 *A tela deverá conter:*</br>
 - *listagem dos veículos*</br>
 - *detalhes do veículo*</br>
