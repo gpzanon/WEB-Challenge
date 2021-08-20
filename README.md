@@ -21,7 +21,7 @@
 *Desenvolver uma aplicação web responsável por gerenciar o cadsatro completo de usuários via API RestFul*</br>
 *Para isso utilize o framework [PHP Laravel/Lumen](https://lumen.laravel.com/)*</br>
 *Utilize todos os métodos (GET, POST, PUT, DELETE)*</br>
-*A aplaicação deverá deverá ser desenvolvida em [VUE.js](https://vuejs.org/), conforme o desenho situado na pasta [layout]*</br>
+*A aplaicação deverá deverá ser desenvolvida em [VUE.js](https://vuejs.org/), conforme o desenho situado na pasta [layout](https://github.com/gpzanon/WEB-Challenge/tree/main/Layout)*</br>
 *A aplçicação deverá consumir a **API** criada anteriormente*</br>
 *Você poderá fazer uso de algum framework para auxiliar no desenvolvimento da interface como [Vuetify](https://vuetifyjs.com/en/), [Bootstrap](https://getbootstrap.com/), [Materialize](https://getbootstrap.com/)*</br>
 *A tela deverá conter:*</br>
