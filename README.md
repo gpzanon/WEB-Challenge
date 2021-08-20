@@ -44,7 +44,7 @@
 - *Documentar todas suposições realizadas*</br>
 - *O desenvolvimento do backend deve ser feito em PHP*</br>
 - *Preferencialmente utilizar **Laravel 5.6+** com toda sua stack*</br>
-- *Preferencialmente utilizar **CodeIgniter**</br>
+- *Preferencialmente utilizar **CodeIgniter***</br>
 - *É aceitável utilizar algumas respostas estáticas em determinadas porções da aplicação*</br>
 
 #### *O que será avaliado*</br>
