@@ -16,5 +16,13 @@ class Vehicle extends Model
         'brand_year',
         'description',
         'is_sold',
+        'sold_in'
     ];
+
+    protected static function booted()
+    {
+        static::updating(function (Vehicle $vehicle) {
+            $vehicle->sold_in = ($vehicle->is_sold ? date('Y-m-d H:i:s') : null);
+        });
+    }
 }

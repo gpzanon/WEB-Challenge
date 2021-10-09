@@ -21,7 +21,7 @@ class CreateVehiclesTable extends Migration
             $table->string('brand_year', 4);
             $table->text('description');
             $table->boolean('is_sold')->default(false);
-            $table->timestamp('sold_in');
+            $table->timestamp('sold_in')->nullable();
             $table->timestamps();
         });
     }
