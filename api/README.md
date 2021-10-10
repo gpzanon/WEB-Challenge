@@ -9,6 +9,16 @@ Para criação do banco de dados, rodar o comando abaixo:
 CREATE DATABASE nomedobanco; 
 ```
 
+- Alterar as configurações da conexão do banco
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
 Para executar a aplicação, seguir os passos abaixo:
 
 - Cria as dependencias necessarias para o funcionamento da aplicação
