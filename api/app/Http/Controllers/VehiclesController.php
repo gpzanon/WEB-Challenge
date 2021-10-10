@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Repositories\BrandsRepository;
 use App\Http\Repositories\VehiclesRepository;
 use Illuminate\Http\JsonResponse;
-use Illuminate\Support\Facades\Request;
+use Illuminate\Http\Request;
 
 class VehiclesController extends Controller
 {
@@ -39,9 +39,10 @@ class VehiclesController extends Controller
      *
      * @return JsonResponse
      */
-    public function index(): JsonResponse
+    public function index(Request $request): JsonResponse
     {
-        $vehicles = $this->vehiclesRepository->listAll();
+        $term = $request->get('term') ?? '';
+        $vehicles = $this->vehiclesRepository->listAll($term);
         $brands = $this->brandsRepository->listAll();
         return response()->json([
             'vehicles' => $vehicles,
@@ -65,8 +66,8 @@ class VehiclesController extends Controller
      */
     public function create(Request $request): JsonResponse
     {
-        $this->vehiclesRepository->save($request->all());
-        return response()->json(true);
+        $vehicle = $this->vehiclesRepository->save($request->all());
+        return response()->json($vehicle);
     }
 
     /**
@@ -76,8 +77,8 @@ class VehiclesController extends Controller
      */
     public function update(int $id, Request $request): JsonResponse
     {
-        $this->vehiclesRepository->update($id, $request->all());
-        return response()->json(true);
+        $vehicle = $this->vehiclesRepository->update($id, $request->all());
+        return response()->json($vehicle);
     }
 
     /**

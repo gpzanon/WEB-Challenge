@@ -27,11 +27,20 @@ class VehiclesRepository
 
 
     /**
-     * @return Vehicle[]|Collection
+     * @param string $term
+     * @return mixed
      */
-    public function listAll()
+    public function listAll(string $term = '')
     {
-        return $this->vehicle->all();
+        return $this
+            ->vehicle
+            ->select([
+                'vehicles.*',
+                'brands.name as brand_name'
+            ])
+            ->join('brands', 'brands.id', '=', 'brand_id')
+            ->where('vehicles.name', 'like', "%$term%")
+            ->get();
     }
 
     /**
@@ -40,25 +49,35 @@ class VehiclesRepository
      */
     public function getVehicleById(int $id)
     {
-        return $this->vehicle->findOrFail($id);
+        return $this
+            ->vehicle
+            ->select([
+                'vehicles.*',
+                'brands.name as brand_name'
+            ])
+            ->where('vehicles.id', $id)
+            ->join('brands', 'brands.id', '=', 'brand_id')
+            ->first();
     }
 
     /**
      * @param array $vehicle
+     * @return mixed
      */
     public function save(Array $vehicle)
     {
-        $this->vehicle->create($vehicle);
+        return $this->vehicle->create($vehicle);
     }
 
     /**
      * @param int $id
      * @param array $data
+     * @return mixed
      */
     public function update(int $id, Array $data)
     {
         $vehicle = $this->vehicle->findOrFail($id);
-        $vehicle->update($data);
+        return $vehicle->update($data);
     }
 
     /**

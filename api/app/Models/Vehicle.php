@@ -25,4 +25,9 @@ class Vehicle extends Model
             $vehicle->sold_in = ($vehicle->is_sold ? date('Y-m-d H:i:s') : null);
         });
     }
+
+    public function brand()
+    {
+        return $this->belongsTo(Brand::class);
+    }
 }

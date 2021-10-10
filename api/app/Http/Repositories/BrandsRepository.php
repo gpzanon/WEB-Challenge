@@ -31,6 +31,6 @@ class BrandsRepository
      */
     public function listAll(): \Illuminate\Support\Collection
     {
-        return $this->brand->all()->pluck('name', 'id');
+        return $this->brand->all();
     }
 }
