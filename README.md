@@ -18,7 +18,7 @@
 
 ## *Frontend*
 ### *Desenvolver a aplicação*</br>
-*Desenvolver uma aplicação web responsável por gerenciar o cadsatro completo de usuários via API RestFul*</br>
+*Desenvolver uma aplicação web responsável por gerenciar o cadastro completo de usuários via API RestFul*</br>
 *Para isso utilize o framework [PHP Laravel/Lumen](https://lumen.laravel.com/)*</br>
 *Utilize todos os métodos (GET, POST, PUT, DELETE)*</br>
 *A aplicação deverá deverá ser desenvolvida em [VUE.js](https://vuejs.org/), conforme o desenho situado na pasta [layout](https://github.com/gpzanon/WEB-Challenge/tree/main/Layout)*</br>
